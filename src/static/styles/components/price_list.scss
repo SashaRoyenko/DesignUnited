@@ -1,0 +1,52 @@
+.price_list{
+  margin-top: 170px;
+  &__offer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 60px;
+  }
+  &__service{
+    margin-top: 46px;
+  }
+}
+.offer{
+  cursor: pointer;
+  &__arrow{
+    @include FlexCenter();
+    width: 26px;
+    height: 26px;
+    border: 3px solid #333333;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  &__slide_arrow{
+    fill: rgb(185, 0, 0);
+    width: 11px;
+    height: 10px;
+    transform: rotate(180deg);
+  }
+  &__title{
+    color: #333333;
+    font-family: "Elektra Bold";
+    font-size: 30px;
+  }
+}
+.service{
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 47px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__title, &__price{
+    font-family: 'Elektra';
+    font-size: 18px;
+    color: #333333;
+  }
+  &__price{
+    color: #b90000;
+  }
+}

@@ -1,0 +1,56 @@
+@mixin AbsoluteCenter() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin AbsoluteXCenter() {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@mixin AbsoluteYCenter() {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@mixin FlexCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin Size($a, $b:false){
+  width:$a + px;
+  @if($b) {
+    height: $b + px;
+  }
+  @else {
+    height: $a + px;
+  }
+}
+body{
+  position: relative;
+}
+.title{
+  font-size: 48px;
+  color: #333333;
+  font-family: 'Elektra Bold';
+  &--red_underline{
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      left: 0;
+      background-color: #bb0000;
+      bottom: -16px;
+      height: 5px;
+      width: 130px;
+    }
+  }
+}
+.main__words{
+  font-size: 18px;
+  color: #333333;
+  font-family: 'Elektra Bold';
+}

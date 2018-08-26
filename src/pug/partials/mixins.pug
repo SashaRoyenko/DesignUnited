@@ -1,0 +1,35 @@
+mixin icon(name,mod)
+    - mod = mod || ''
+    svg(class=" "+ mod)
+        use(xlink:href="static/img/svg/symbol/sprite.svg#" + name)
+
+mixin employee(employee_img, employee_name, employee_description)
+    li.employee__item.col-lg-3.col-md-6
+        img.employee__img(src='static/img/team/' + employee_img + '.png')
+        article.employee__content
+            h5.employee__name= employee_name
+            p.employee__about= employee_description
+            div.employee__social_networks_wrap
+                a(href='')
+                    img.employee_social_networks_img(src='static/img/team/mail.png')
+                a(href='')
+                    img.employee__social_networks_img(src='static/img/team/telegram.png')
+
+mixin vacation(vacation_img, vacation_name, vacation_description)
+    li.employee__item.col-lg-3.col-md-6
+        img.employee__img(src='static/img/team/' + vacation_img + '.png')
+        article.employee__content.employee__content-vacation
+            h5.employee__name= vacation_name
+            p.employee__about= vacation_description
+
+mixin price_list_item(offer,...services)
+    article.price_list__offer.offer
+        .offer__arrow
+            +icon('triangle', 'offer__slide_arrow')
+        h5.offer__title= offer
+    ul.price_list__service.service
+        each service in services
+            li.service__item
+                h6.service__title= service
+                p.service__price Цена
+

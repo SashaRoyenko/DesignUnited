@@ -1,0 +1,23 @@
+.intro{
+  background-image: url('../img/intro/layer.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding-top: 200px;
+  &__DesignForYou_title{
+    color: #fff;
+    font-size: 60px;
+    font-family: 'ProximaNova Thin';
+  }
+  &__suggestion_title{
+    color:#fff;
+    font-size: 72px;
+    font-family: 'ProximaNova Bold';
+    margin-top: 20px;
+  }
+  &__anchor_links{
+
+  }
+}

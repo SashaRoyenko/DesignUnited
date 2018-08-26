@@ -1,0 +1,55 @@
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 30px;
+  @include AbsoluteXCenter();
+  &__contact{
+    display: flex;
+    flex-direction: column;
+  }
+  &__phone{
+    margin-top: 5px;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'ProximaNova Regular';
+  }
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &__img{
+    margin-right: 15px;
+  }
+  &__text_wrap{
+    display: flex;
+    flex-direction: column;
+  }
+  &__title,&__description{
+    color: #fff;
+    font-family: 'ProximaNova Light';
+  }
+  &__title{
+    font-size: 43px;
+  }
+  &__description{
+    font-size: 17px;
+  }
+}
+.question{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &__img{
+    width: 30px;
+    height: 28px;
+    margin-right: 25px;
+  }
+  &__content{
+    color: #fff;
+    font-size: 30px;
+  }
+}
