@@ -54,3 +54,21 @@ body{
   color: #333333;
   font-family: 'Elektra Bold';
 }
+.button{
+  background-color: #b90000;
+  border-radius: 5px;
+  height: 70px;
+  &__text{
+    color: #fff;
+    text-align: center;
+    line-height: 70px;
+    font-family: "Elektra Bold";
+    font-size: 26px;
+  }
+}
+.social_networks{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}

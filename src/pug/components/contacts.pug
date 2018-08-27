@@ -1,0 +1,36 @@
+section.contact.container
+    h4.title.title--red_underline Остались вопросы?!
+    div.contact__wrap.col-12.row
+        form(action="").contact__form.form.col-8.row
+            input.form__input.form__name.col(type='text', required, placeholder='Ваше имя *')
+            input.form__input.form__email.col(type='tel', required, placeholder='Номер телефона *' )
+            input.form__input.form__email.col-12(type='email', required, placeholder='E-mail *')
+            textarea.form__input.form__message.col-12(name="message", placeholder='Введите ваше сообщение')
+            button.form__button.button.col-6
+                a.button__text ОТПРАВИТЬ
+        div.contact__description.col-3.offset-1.row
+            ul.contact__details.list
+                li.list__item
+                    img.list__img(src='static/img/contact/adress.png')
+                    p.list__content 49102, Днепр, ул. Волынская, д.9, 3-й подъезд
+                li.list__item
+                    img.list__img(src='static/img/contact/phone.png')
+                    p.list__content +38 (066) 777-04-90
+                li.list__item
+                    img.list__img(src='static/img/contact/mail.png')
+                    p.list__content design.united.studio@gmail.com
+                li.list__item
+                    img.list__img(src='static/img/contact/telegram.png')
+                    p.list__content @AlexeyMarshall
+                li.list__item
+                    img.list__img(src='static/img/contact/clock.png')
+                    p.list__content График работы: 8:00 - 20:00, Пн-Пт
+            ul.contact__social_networks.social_networks
+                a(href='')
+                    img(src='static/img/contact/vk.png')
+                a(href='')
+                    img(src='static/img/contact/telegram_network.png')
+                a(href='')
+                    img(src='static/img/contact/behance.png')
+                a(href='')
+                    img(src='static/img/contact/instagram.png')

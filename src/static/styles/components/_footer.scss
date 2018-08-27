@@ -1,0 +1,33 @@
+.footer{
+  background-image: url('../img/footer/footer_bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 35px 0 15px 0;
+  margin-top: 100px;
+  position: relative;
+  &__wrap{
+    margin: 0 auto;
+  }
+  &__item{
+    margin-bottom: 35px;
+  }
+  &__logo_title,
+  &__logo_description{
+    color: #b90000;
+  }
+  &__copy{
+    margin-top: 55px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Elektra';
+  }
+  &__contact{
+    color: #fff;
+  }
+  &__logo{
+    align-self: baseline;
+  }
+}

@@ -1,0 +1,56 @@
+.contact{
+  margin-top: 105px;
+  &__wrap{
+    margin-top: 80px;
+  }
+}
+.form{
+  &__wrap{
+    display: flex;
+    flex-direction: row;
+  }
+  &__input{
+    background-color: #fff;
+    border:1px solid #c4c4c4;
+    height: 78px;
+    padding-left: 30px;
+    margin-bottom: 25px;
+    border-radius: 5px !important;
+    &:focus{
+      border-color: #7f7f7f;
+    }
+    &::placeholder{
+      color: #333333;
+      font-family: "Elektra";
+      font-size: 18px;
+    }
+  }
+  &__name{
+    margin-right: 30px;
+  }
+  &__message{
+    padding-top: 35px;
+    min-height: 222px;
+    resize: none;
+  }
+  &__button{
+    width: 360px;
+  }
+}
+.list{
+  width: 100%;
+  &__item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  &__img{
+    margin-right: 30px;
+  }
+  &__content{
+    color: #333333;
+    font-size: 18px;
+    font-family: 'Elektra';
+  }
+}
