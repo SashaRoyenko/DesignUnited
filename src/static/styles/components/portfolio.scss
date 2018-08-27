@@ -1,0 +1,71 @@
+.portfolio{
+  margin-top: 100px;
+  &__content{
+    margin-top: 65px;
+  }
+  &__button{
+    width: 360px;
+  }
+}
+.project{
+  &__work{
+    position: relative;
+    height: fit-content;
+  }
+  &__img{
+    width: 100%;
+  }
+  &__content{
+    color: #333333;
+  }
+  &__task{
+    font-family: 'Elektra Bold';
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  &__problem{
+    font-family: 'Elektra Bold';
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__description{
+    font-family: 'Elektra';
+    font-size: 16px;
+    margin-bottom: 38px;
+    line-height: 24px;
+    &:last-child{
+      margin-bottom: 50px;
+    }
+  }
+}
+.slider_btn{
+  position: absolute;
+  width: calc(100% - 30px);
+  bottom: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  height: 60px;
+  background-color: rgba(78,78,78,.4);
+  z-index: 10;
+  &__wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__text{
+    color: #fff;
+    font-family: 'Elektra';
+    font-size: 16px;
+  }
+  &-left{
+    margin-right: 20px;
+  }
+  &-right{
+    margin-left: 20px;
+    transform: rotate(180deg);
+  }
+}

@@ -64,7 +64,14 @@ body{
     line-height: 70px;
     font-family: "Elektra Bold";
     font-size: 26px;
+    text-transform: uppercase;
   }
+}
+.link{
+  font-family: 'Elektra';
+  font-size: 16px;
+  color: #006ff8;
+  text-decoration: underline;
 }
 .social_networks{
   display: flex;
